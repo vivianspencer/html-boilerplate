@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* Variables
+   ========================================================================== */
+
+// Bootstrap - required
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+$enable-caret: false;
+$enable-gradients: false;
+$enable-grid-classes: false;
+$enable-print-styles: true;
+$enable-responsive-font-sizes: true;
+$enable-rounded: false;
+$enable-shadows: false;
+$enable-transitions: true;
+$enable-validation-icons: true;
+//$enable-deprecation-messages: false;

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Master stylesheet
+   ========================================================================== */
+
+// Fonts
+@import 'common/fonts';
+
+// Variables
+@import 'common/mixins';
+@import 'common/variables';
+
+// Bootstrap
+@import '~bootstrap/scss/reboot';
+
+// Common elements
+@import 'common/scaffolding';
+@import 'components/button';
+@import '~bootstrap/scss/utilities/embed';
+
+// Sections
+@import 'layouts/header';
+@import 'layouts/footer';

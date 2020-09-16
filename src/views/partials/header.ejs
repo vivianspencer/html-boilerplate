@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="<%= meta.lang %>">
+<head>
+    <!-- Common Tags -->
+    <% if (meta.preventIndexing) { %>
+        <meta name="robots" content="noindex" />
+    <% } %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″ />
+
+    <!-- Search Engine -->
+    <title><%= meta.title %></title>
+    <meta name="description" content="<%= meta.description %>" />
+    <meta name="image" content="<%= meta.image %>">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="<%= meta.title %>">
+    <meta itemprop="description" content="<%= meta.description %>">
+    <meta itemprop="image" content="<%= meta.image %>">
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="<%= meta.ogTitle %>" />
+    <meta property="og:type" content="<%= meta.ogType %>" />
+    <meta property="og:description" content="<%= meta.ogDescription %>" />
+    <meta property="og:url" content="<%= meta.ogUrl %>" />
+    <meta property="og:site_name" content="<%= meta.ogSiteName %>" />
+    <meta property="og:image" content="<%= meta.ogImage %>" />
+    <meta property="og:locale" content="<%= meta.lang %>" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="<%= meta.twitterTitle %>" />
+    <meta name="twitter:description" content="<%= meta.twitterDescription %>" />
+
+    <%- include favicon %>
+
+    <link rel="stylesheet" href="assets/css/style.css?id=<%= timestamp %>" />
+</head>
+<body>
